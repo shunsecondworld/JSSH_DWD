@@ -13,6 +13,7 @@
 		3F214F1A1CDA93BE00EE31B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F214F191CDA93BE00EE31B5 /* Assets.xcassets */; };
 		3F214F1D1CDA93BE00EE31B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F214F1B1CDA93BE00EE31B5 /* LaunchScreen.storyboard */; };
 		3F214F281CDA93BE00EE31B5 /* DWDappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F214F271CDA93BE00EE31B5 /* DWDappTests.swift */; };
+		3F214F331CDA99CD00EE31B5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F214F321CDA99CD00EE31B5 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F214F231CDA93BE00EE31B5 /* DWDappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWDappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F214F271CDA93BE00EE31B5 /* DWDappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWDappTests.swift; sourceTree = "<group>"; };
 		3F214F291CDA93BE00EE31B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F214F321CDA99CD00EE31B5 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3F214F191CDA93BE00EE31B5 /* Assets.xcassets */,
 				3F214F1B1CDA93BE00EE31B5 /* LaunchScreen.storyboard */,
 				3F214F1E1CDA93BE00EE31B5 /* Info.plist */,
+				3F214F321CDA99CD00EE31B5 /* LoginController.swift */,
 			);
 			path = DWDapp;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F214F151CDA93BE00EE31B5 /* ViewController.swift in Sources */,
+				3F214F331CDA99CD00EE31B5 /* LoginController.swift in Sources */,
 				3F214F131CDA93BE00EE31B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +394,7 @@
 				3F214F2E1CDA93BE00EE31B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F214F2F1CDA93BE00EE31B5 /* Build configuration list for PBXNativeTarget "DWDappTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +403,7 @@
 				3F214F311CDA93BE00EE31B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

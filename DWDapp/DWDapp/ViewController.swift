@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func buttonTapped(sender: AnyObject) {
+        performSegueWithIdentifier("loginSegue", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "loginSegue" {
+            if let destinationVC = segue.destinationViewController as? LoginController {
+                print("aaa")
+            }
+        }
+    }
+    
 
 }
 
