@@ -34,9 +34,15 @@
                                     <segment title="Fourth"/>
                                 </segments>
                             </segmentedControl>
+<<<<<<< HEAD
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vss-sH-nAK">
                                 <rect key="frame" x="160" y="149" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.016307898840000001" blue="0.00066211250050000003" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xuf-7g-aft">
+                                <rect key="frame" x="360" y="472" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.1107546368" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> origin/master
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
