@@ -12,5 +12,11 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var idTB: UITextField!
     
+    @IBOutlet weak var pwTB: UITextField!
+    
+    var id : String = ""
+    var pw : String = ""
+    
+    
     
 }

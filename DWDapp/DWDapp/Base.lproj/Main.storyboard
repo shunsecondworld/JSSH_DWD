@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="idTB" destination="TeT-42-naF" id="E3j-Zg-Enb"/>
+                        <outlet property="pwTB" destination="l0L-gg-yAn" id="OUm-oU-qCA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQG-CM-5pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
