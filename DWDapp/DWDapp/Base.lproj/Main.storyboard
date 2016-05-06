@@ -9,6 +9,8 @@
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
             <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -31,15 +33,6 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTc-8J-Ff7"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-yz-rhc">
-                                <rect key="frame" x="20" y="77" width="560" height="29"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
-                                    <segment title="Fourth"/>
-                                </segments>
-                            </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1L-Ul-o0n">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
                                 <subviews>
@@ -57,6 +50,16 @@
                                     <constraint firstItem="xC5-WX-E19" firstAttribute="centerX" secondItem="U1L-Ul-o0n" secondAttribute="centerX" id="cZT-qZ-Fw5"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-yz-rhc">
+                                <rect key="frame" x="20" y="77" width="560" height="29"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.79215686269999996" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,9 +69,15 @@
                             <constraint firstItem="VuH-yz-rhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ioo-tx-UX0"/>
                             <constraint firstItem="U1L-Ul-o0n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kNS-bY-qwV"/>
                             <constraint firstItem="P9V-Fg-CDD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kPp-Pa-TDB"/>
+                            <constraint firstItem="VuH-yz-rhc" firstAttribute="top" secondItem="U1L-Ul-o0n" secondAttribute="bottom" constant="10" id="mSg-ac-Ry4"/>
                             <constraint firstItem="U1L-Ul-o0n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oRP-tj-8hm"/>
                             <constraint firstAttribute="trailing" secondItem="U1L-Ul-o0n" secondAttribute="trailing" id="tsg-tl-jZF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ioo-tx-UX0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="RHK-nt-EQ5"/>
                     <connections>
@@ -91,12 +100,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nLC-2w-QhT">
-                                <rect key="frame" x="20" y="240" width="560" height="120"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nLC-2w-QhT">
+                                <rect key="frame" x="20" y="240" width="560" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTT-Hf-fkP">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="backgroundColor" red="0.36862745098039218" green="0.792156862745098" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -107,7 +117,8 @@
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnZ-Ve-C0i">
                                         <rect key="frame" x="0.0" y="60" width="560" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.79215686269999996" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -116,27 +127,40 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHv-mK-9b1">
+                                        <rect key="frame" x="0.0" y="120" width="560" height="30"/>
+                                        <state key="normal" title="Log in"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-tP-PVc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Denver Washer Dryer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oku-Mc-U5Y">
-                                        <rect key="frame" x="113" y="15" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="         Denver Washer Dryer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oku-Mc-U5Y">
+                                        <rect key="frame" x="113" y="11" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denver_washer_dryer_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uiQ-6z-GdR">
+                                        <rect key="frame" x="5" y="8" width="65" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HlY-M3-ul6"/>
+                                            <constraint firstAttribute="width" constant="65" id="VX0-ay-Yxh"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.63921568630000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Oku-Mc-U5Y" firstAttribute="centerY" secondItem="hdg-tP-PVc" secondAttribute="centerY" id="8TY-Dv-p3x"/>
+                                    <constraint firstItem="uiQ-6z-GdR" firstAttribute="leading" secondItem="hdg-tP-PVc" secondAttribute="leading" constant="5" id="hRG-PE-1tr"/>
                                     <constraint firstAttribute="height" constant="63" id="paA-6C-Iga"/>
                                     <constraint firstItem="Oku-Mc-U5Y" firstAttribute="centerX" secondItem="hdg-tP-PVc" secondAttribute="centerX" id="ukE-r6-GE8"/>
+                                    <constraint firstItem="uiQ-6z-GdR" firstAttribute="top" secondItem="hdg-tP-PVc" secondAttribute="top" constant="8" id="uqL-Hb-4YD"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.88556249999999992" green="0.88556249999999992" blue="0.88556249999999992" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nLC-2w-QhT" secondAttribute="trailing" id="3Uo-W8-xSG"/>
                             <constraint firstItem="nLC-2w-QhT" firstAttribute="top" secondItem="8Kr-ug-7dy" secondAttribute="bottom" id="Vo7-r0-hd6"/>
@@ -154,10 +178,44 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="XpO-Kv-WJ7" kind="show" identifier="techSideSegue" id="fAg-c6-ERP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQG-CM-5pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="64"/>
+            <point key="canvasLocation" x="-71" y="58"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="czK-5D-Y0G">
+            <objects>
+                <tableViewController id="XpO-Kv-WJ7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aqY-JD-x2g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YV9-ip-kKe">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YV9-ip-kKe" id="D9m-XM-1ym">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XpO-Kv-WJ7" id="uYL-Te-Yqy"/>
+                            <outlet property="delegate" destination="XpO-Kv-WJ7" id="Nwi-09-SLs"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRD-T1-0b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="denver_washer_dryer_logo" width="196" height="125"/>
+    </resources>
 </document>
